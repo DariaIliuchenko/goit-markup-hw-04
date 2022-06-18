@@ -18,6 +18,9 @@ body {
 h1 {
   margin: 0;
 }
+a {
+  color: currentColor;
+}
 img {
   display: block;
   max-width: 100%;
@@ -139,7 +142,16 @@ img {
 /*hero*/
 
 .hero {
+  background-size: cover;
   background-color: var(--background-secondary-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1600рх;
   letter-spacing: 0.06em;
   text-align: center;
 
@@ -147,6 +159,7 @@ img {
   padding-bottom: 200px;
   align-items: center;
 }
+
 .hero-title {
   margin-left: auto;
   margin-right: auto;
@@ -163,6 +176,7 @@ img {
 .hero .hero-button {
   display: block;
   margin: 0 auto;
+  border: transparent;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
@@ -173,12 +187,14 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.86;
+  text-align: center;
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
 }
 /*----benefits-------------*/
+
 .section-benefits {
   padding-top: 94px;
   padding-bottom: 0;
@@ -248,7 +264,8 @@ img {
   padding-bottom: 30px;
 }
 .names-text p {
-  margin: 0;
+  /* margin: 0; */
+  margin-bottom: 30px;
 }
 
 .names .title {
@@ -258,6 +275,23 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+}
+.names-icon-list {
+  display: flex;
+  justify-content: center;
+}
+.names-icon-item + .names-icon-item {
+  margin-left: 10px;
+}
+
+.soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: aqua;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*portfolio*/
