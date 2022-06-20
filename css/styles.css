@@ -348,12 +348,15 @@ img {
   margin-left: 30px;
 }
 .clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  width: 100%;
-  height: 100%;
+  width: 170px;
+  height: 92px;
 }
-.clients-item:hover,
-.clients-item:hover {
+.clients-link:hover,
+.clients-link:hover {
   border: 1px solid var(--accent-text-color);
 }
 .clients-link:hover .clients-icon,
@@ -470,7 +473,7 @@ img {
 }
 .footer-conteiner {
   display: flex;
-  justify-content: flex-start;
+
   align-items: baseline;
 }
 .footer .logo {
