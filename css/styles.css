@@ -353,7 +353,7 @@ img {
   height: 92px;
 }
 .clients-link:hover,
-.clients-link:hover {
+.clients-link:focus {
   border: 1px solid var(--accent-text-color);
 }
 .clients-link:hover .clients-icon,
