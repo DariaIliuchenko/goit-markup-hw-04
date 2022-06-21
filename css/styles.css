@@ -338,11 +338,7 @@ img {
   justify-content: center;
   align-items: center;
 }
-.clients-item {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  color: #afb1b8;
-}
+
 .clients-item + .clients-item {
   margin-left: 30px;
 }
@@ -353,6 +349,10 @@ img {
   cursor: pointer;
   width: 170px;
   height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
 }
 .clients-link:hover,
 .clients-link:focus {
